@@ -18,8 +18,8 @@ model = MultinomialNB()
 model.fit(X_train_count, y_train)
 
 emails = [
-    "Amazing Offers, Amazing Prizes. Get Gifts",
-    "Welcome to Sunday Samayal"
+    "Welcome to Sunday Samayal",
+    "Big Offers, 50% Offer on Discount"
 ]
 
 emails_count = CV.transform(emails)
