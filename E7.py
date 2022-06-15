@@ -44,7 +44,7 @@ nonLinearModel = SVC(kernel = "rbf")
 nonLinearModel.fit(X_train, y_train)
 result = nonLinearModel.predict(X_test)
 
-print("Linear Accuracy: ", accuracy_score(y_true = y_test, y_pred = result))
+print("Non Linear Accuracy: ", accuracy_score(y_true = y_test, y_pred = result))
 print(confusion_matrix(y_true = y_test, y_pred = result))
 
 plt.show()
